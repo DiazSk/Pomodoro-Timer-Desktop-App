@@ -5,6 +5,8 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](README.md)
 [![Electron](https://img.shields.io/badge/electron-v28.0.0-blue.svg)](package.json)
 
+Created by Zaid Shaikh
+
 A modern, feature-rich Pomodoro Timer desktop application that transforms the traditional Pomodoro Technique into a comprehensive productivity suite. Built with Electron.js, this application combines powerful task management, insightful analytics, and engaging gamification elements to help users maintain focus and boost productivity.
 
 ## ✨ Why This Pomodoro Timer?
@@ -152,4 +154,4 @@ Licensed under the ISC License. See [LICENSE](LICENSE) for details.
 
 ---
 
-Made with ❤️ by the productivity community
+Made with passion for the productivity community
