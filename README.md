@@ -62,7 +62,7 @@ A modern, feature-rich Pomodoro Timer desktop application that transforms the tr
 #### For Developers
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pomodoro-timer
+git clone https://github.com/yourusername/Pomodoro-Timer-Desktop-App.git
 
 # Install dependencies
 npm install
