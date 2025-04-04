@@ -387,15 +387,15 @@ h1 {
 
 /* Priority colors for tasks */
 .priority-high {
-    border-left: 4px solid #ffffff;
+    border-left: 4px solid var(--light-gray);
 }
 
 .priority-medium {
-    border-left: 4px solid #a0a0a0;
+    border-left: 4px solid var(--light-gray);
 }
 
 .priority-low {
-    border-left: 4px solid #606060;
+    border-left: 4px solid var(--light-gray);
 }
 
 /* Category badges */
@@ -415,10 +415,11 @@ h1 {
     filter: brightness(1.2);
 }
 
-.category-work { background: #424242; }
-.category-study { background: #4a4a4a; }
-.category-personal { background: #525252; }
-.category-health { background: #5a5a5a; }
+/* Remove background color differences for categories */
+.category-work { background: var(--light-gray); }
+.category-study { background: var(--light-gray); }
+.category-personal { background: var(--light-gray); }
+.category-health { background: var(--light-gray); }
 
 @media (max-width: 600px) {
     .timer-display {
@@ -541,20 +542,57 @@ h1 {
 }
 
 .task-details span {
-    font-weight: bold;
-    color: #3498db;
+    font-weight: normal;
+    color: var(--text-secondary) !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
 }
 
-/* Category colors in current task display */
-.category-label-work { color: #a0aec0; }
-.category-label-study { color: #a8b2c1; }
-.category-label-personal { color: #b2bac3; }
-.category-label-health { color: #bcc2cc; }
+#current-task-category,
+#current-task-priority {
+    font-weight: normal !important;
+    color: var(--text-secondary) !important;
+    background: none !important;
+    background-color: transparent !important;
+}
 
-/* Priority colors in current task display */
-.priority-label-high { color: #8b939c; }
-.priority-label-medium { color: #646b73; }
-.priority-label-low { color: #404b59; }
+/* Remove any styling from category labels */
+[class*="category-"] {
+    background: none !important;
+    color: var(--text-secondary) !important;
+    font-weight: normal !important;
+}
+
+/* Remove any styling from priority labels */
+[class*="priority-"] {
+    background: none !important;
+    color: var(--text-secondary) !important;
+    font-weight: normal !important;
+}
+
+/* Category label display */
+.category-label-work, 
+.category-label-study, 
+.category-label-personal, 
+.category-label-health {
+    color: var(--text-secondary) !important;
+    background: none !important;
+    font-weight: normal !important;
+}
+
+/* Priority label display */
+.priority-label-high, 
+.priority-label-medium, 
+.priority-label-low {
+    color: var(--text-secondary) !important;
+    background: none !important;
+    font-weight: normal !important;
+}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -1163,4 +1201,34 @@ button, input, select, .category-badge, .todo-actions button {
     .experience-bar {
         width: 100%;
     }
+}
+
+.task-text {
+    font-weight: normal !important;
+    color: var(--text-secondary) !important;
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline !important;
+}
+
+/* Category label display */
+.category-label-work, 
+.category-label-study, 
+.category-label-personal, 
+.category-label-health {
+    color: var(--text-secondary) !important;
+    background: none !important;
+    font-weight: normal !important;
+}
+
+/* Priority label display */
+.priority-label-high, 
+.priority-label-medium, 
+.priority-label-low {
+    color: var(--text-secondary) !important;
+    background: none !important;
+    font-weight: normal !important;
 }
