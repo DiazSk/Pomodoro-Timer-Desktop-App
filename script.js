@@ -329,9 +329,9 @@ class PomodoroTimer {
             taskElement.classList.add('selected-task');
         }
         
-        // Add color classes for category and priority
-        this.currentTaskCategory.className = `category-label category-${task.category}`;
-        this.currentTaskPriority.className = `priority-label priority-${task.priority}`;
+        // Remove any styling classes for category and priority 
+        this.currentTaskCategory.className = 'task-text';
+        this.currentTaskPriority.className = 'task-text';
         
         this.renderTodos();
         
